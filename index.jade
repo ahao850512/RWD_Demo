@@ -4,18 +4,107 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/reset.css")
         link(rel="stylesheet", href="css/style.css")
         title RWD_Demo
     body
+        //- 導覽列
         input#menuCheck(type="checkbox", name="")
         header
             a.logo(href="#")   
-                img(src="https://picsum.photos/60/40/?random=2", alt="")
+                img(src="https://picsum.photos/40/40/?random=1", alt="")
             label.iconBox(for="menuCheck")
                 span.iconBar
             nav 
-                a(href="#1") link
-                a(href="#2") link
-                a(href="#3") link
-                a(href="#4") link
-            
+                a(href="#about") about
+                a(href="#product") product
+                a(href="#work") work
+                a(href="#contact") contact
+        
+        //- 看板
+        section.banner 
+            img(src="https://picsum.photos/1500/500/?random=2", alt="")
+        main
+            section#about
+                h1.sectionTitle about 
+                p.sectionText Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque minus praesentium asperiores corrupti enim.
+                .container 
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=3", alt="")
+                        .text
+                            h2 title
+                            p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=4", alt="")
+                        .text
+                            h2 title
+                            p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+            section#product
+                h1.sectionTitle product
+                .container 
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=5", alt="")
+                        .text
+                            h2 title
+                            p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=6", alt="")
+                        .text
+                            h2 title
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=7", alt="")
+                        .text
+                            h2 title
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+            section#work
+                h1.sectionTitle work
+                p.sectionText Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque minus praesentium asperiores corrupti enim.
+                .container 
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=8", alt="")
+                        .text
+                            h2 title
+                            p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=8", alt="")
+                        .text
+                            h2 title
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=8", alt="")
+                        .text
+                            h2 title
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=8", alt="")
+                        .text
+                            h2 title
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+            section#contact
+                h1.sectionTitle content
+                .container 
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=9", alt="")
+                        .text
+                            h2 title
+                            p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+                    article.items
+                        .pic
+                            img(src="https://picsum.photos/300/200?random=10", alt="")
+                        .text
+                            h2 title
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatum.
+        
+        footer &copy; copyright 2019 by ChienHao
+
